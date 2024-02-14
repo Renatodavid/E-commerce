@@ -6,7 +6,7 @@ function trocaBanner() {
   document.querySelector('.destaque img').src = banners[bannerAtual];
 }
 
-setInterval(trocaBanner, 40000);
+setInterval(trocaBanner, 10000);
 
 $('.mais-vendidos, .novidades').addClass('painel-compacto');
 
