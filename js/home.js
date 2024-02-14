@@ -6,7 +6,7 @@ function trocaBanner() {
   document.querySelector('.destaque img').src = banners[bannerAtual];
 }
 
-setInterval(trocaBanner, 10000);
+setInterval(trocaBanner, 4000);
 
 $('.mais-vendidos, .novidades').addClass('painel-compacto');
 
@@ -16,11 +16,4 @@ $('.mais-vendidos button').click(function() {
 
 $('.novidades button').click(function() {
 	$('.novidades').removeClass('painel-compacto');
-});
-
-$(document).ready(function () {
-    $('.menu-departamentos .departamentos-lista > li').click(function (e) {
-        e.preventDefault();
-        $(this).find('.sublista').slideToggle();
-    });
 });
