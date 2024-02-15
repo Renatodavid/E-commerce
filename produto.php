@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/produto.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	
+	<link rel="stylesheet" href="css/mobile.css">
 
 	<body>
 	<?php 
 	$cabecalho_title ="Produto da Mirror Fashion";
-	 include("cabecalho.php");?>
+	 include("./php/cabecalho.php");?>
 	 
 	<div class="produto">
 				<h1>Fuzzy Cardigan</h1>
 				<p>por apenas R$ 129,00</p>
 
-				<form action="checkout.html">
+				<form action="checkout.php">
 			    	<fieldset class="cores">
 			        	<legend>Escolha a cor:</legend>
 
@@ -40,8 +45,14 @@
 			      	<input type="submit" class="comprar" value="Comprar">
 			  	</form>
 			</div>
+			<table>
+				<caption>Quantidade e preço de camiseteas</caption>
+				<colgroup>
+				</col width="10%">
+			</colgroup>
+			</table>
 	
-	<?php include("rodape.php");?>
+	<?php include("./php/rodape.php");?>
 	</body>
 
 </html>

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sobre a Mirror Fashion</title>
-		
+		<link rel="stylesheet" href="css/produto.css">
 		<link rel="stylesheet" href="css/sobre.css">
 	</head>
 	

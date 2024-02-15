@@ -1,7 +1,7 @@
 
 <title>
     <?php print $cabecalho_title;
-    include("cabecalho.php")?>
+    include("./cabecalho.php")?>
 </title>
 <header class="container">
     <?php print @$Cabecalho_css;?>
