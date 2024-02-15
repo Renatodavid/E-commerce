@@ -7,11 +7,9 @@
 		
 		<link rel="stylesheet" href="css/sobre.css">
 	</head>
-
+	
 	<body>
-		<?php
-		print date ('y') - 1992;
-		?>
+		
 		<img src="img/logo.png">
 		
 		<h1>A Mirror Fashion</h1>
