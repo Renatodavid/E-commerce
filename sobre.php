@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,12 +9,15 @@
 	</head>
 
 	<body>
+		<?php
+		print date ('y') - 1992;
+		?>
 		<img src="img/logo.png">
 		
 		<h1>A Mirror Fashion</h1>
 		<p>
 			A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
-			Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
+			Fundada ha <?php print date ("y");?>em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
 			participação em 118 deles.
 		</p>
 
