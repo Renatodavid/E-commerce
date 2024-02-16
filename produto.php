@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/produto.css">
+	
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/estilo.css">
 	
+	<link rel="stylesheet" href="css/mobile.css"media="(max-width:939px)">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap-flatly.css">
+	<link rel="stylesheet" href="css/produto.css">
 	<link rel="stylesheet" href="css/mobile.css">
+	
 
 	<body>
 	<?php 
@@ -54,5 +59,6 @@
 	
 	<?php include("./php/rodape.php");?>
 	</body>
-
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
 </html>

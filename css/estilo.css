@@ -184,7 +184,9 @@ footer .container {
 .social a[href*="plus"] {
 	background-image: url(../img/googleplus.png);
 }
-
+.navbar{
+	margin: 0;
+}
 
 
 .painel h2:before {
