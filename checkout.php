@@ -23,6 +23,7 @@
     <input type="hidden" name="preco" value="129.99">
     <dt>Produto</dt>
     <dd><?= $_POST['nome']?></dd>
+    <dt>Preço</dt>
     <dd><?=$_POST['preco']?></dd>
     
 
