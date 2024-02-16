@@ -6,7 +6,7 @@ function trocaBanner() {
   document.querySelector('.destaque img').src = banners[bannerAtual];
 }
 
-setInterval(trocaBanner, 40000);
+setInterval(trocaBanner, 4000);
 
 $('.mais-vendidos, .novidades').addClass('painel-compacto');
 
@@ -18,9 +18,24 @@ $('.novidades button').click(function() {
 	$('.novidades').removeClass('painel-compacto');
 });
 
-$(document).ready(function () {
-    $('.menu-departamentos .departamentos-lista > li').click(function (e) {
-        e.preventDefault();
-        $(this).find('.sublista').slideToggle();
-    });
+document.addEventListener('DOMContentLoaded', (event) => {
+  let menuItems = document.querySelectorAll('.departamentos-lista > li > a');
+
+  menuItems.forEach((item) => {
+      item.addEventListener('click', (event) => {
+          event.preventDefault();
+
+          // Feche todas as sublistas
+          document.querySelectorAll('.sublista').forEach((sublista) => {
+              if (sublista !== item.nextElementSibling) {
+                  sublista.style.display = 'none';
+              }
+          });
+
+          // Abra ou feche a sublista clicada
+          let subMenu = item.nextElementSibling;
+          subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+      });
+  });
 });
+

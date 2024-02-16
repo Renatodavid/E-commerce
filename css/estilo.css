@@ -64,12 +64,25 @@ header {
 	margin-bottom: 1px;
 	padding: 5px 10px;
 }
-
+.menu-departamentos li ul {
+	display: none;
+}
 .menu-departamentos a {
 	color: #333333;
 	text-decoration: none;
 }
-
+.menu-departamentos {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	clear: left;
+}
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 3px;
+}
+.menu-departamentos li :hover ul{
+	display:block;
+}
 .busca input {
 	vertical-align: middle;
 }
@@ -81,12 +94,6 @@ header {
 .busca, 
 .menu-departamentos {
 	float: left;
-}
-
-.menu-departamentos {
-	margin-top: 10px;
-	padding-bottom: 10px;
-	clear: left;
 }
 
 .destaque {
@@ -178,17 +185,19 @@ footer .container {
 	background-image: url(../img/googleplus.png);
 }
 
-.menu-departamentos li li a:before {
-	content: '\272A';
-	padding-right: 3px;
-}
+
 
 .painel h2:before {
 	content: '\2756';
 	padding-right: 5px;
 	opacity: 0.4;
 }
-
+.sublista{
+	display:none
+}
+.sublista.active{
+	display: block;
+}
 .novidades {
 	background-color: #f5dcdc;
 	background: linear-gradient(#f5dcdc, #bebef4);
