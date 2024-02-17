@@ -14,7 +14,7 @@
 		
 		<h1>A Mirror Fashion</h1>
 		<p>
-			<strong><a href="index.html">A Mirror Fashion</a></strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
+			<strong><a href="index.php">A Mirror Fashion</a></strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
 			Fundada ha <?php print date ("y");?>em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
 			participação em 118 deles.
 		</p>
