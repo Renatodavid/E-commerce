@@ -17,13 +17,13 @@
 	<div class="container ">
   <div class="row  ">
     <div class="col-md-6 ">
-      <img src="img/destaque-home.png"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto;">
+      <img src="img/destaque-home.png"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
     </div>
-    <div class="col-md-9">
+    <div class="col-md-6">
       <fieldset class="col-md-9">
         <div class="col-md-11">
           <section class="busca col-md-12">
-            <h2>Busca</h2>
+            <h2 class="col-md-10">Busca</h2>
             <form>
               <input type="search" />
               <input type="image" src="img/busca.png" />
@@ -31,7 +31,7 @@
           </section>
           <section class="menu-departamentos col-md-12">
             <nav class="navbar-inverse">
-              <h2>Departamentos</h2>
+              <h2 >Departamentos</h2>
               <ul class="departamentos-lista">
                 <li><a href="#">Blusas e Camisas</a>
                   <ul class="sublista">
