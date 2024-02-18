@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html>
+	<title>
 
-<head>
-	<title>Mirror Fashion</title>
+			<?php $links ="links css js";
+		include("./php/links.php");?>
+	</title>
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/mobile.css"media="(max-width:939px)">
-
-	
-	
-	
-
-</head>
 
 <body>
 	<header class="container">
@@ -25,87 +16,93 @@
 		<p class="sacola">
 			Nenhum item na sacola de compras
 		</p>
-
-		<nav class="menu-opcoes">
-			<ul>
-				<li><a href="#">Sua Conta</a></li>
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.php">Mirror Fashion</a>
+			</div>
+			<ul class="nav navbar-nav">
+			<li><a href="#">Sua Conta</a></li>
 				<li><a href="#">Lista de Desejos</a></li>
 				<li><a href="#">Cartão Fidelidade</a></li>
-				<li><a href="#">Sobre</a></li>
+				<li><a href="sobre.php">Sobre</a></li>
 				<li><a href="#">Ajuda</a></li>
 			</ul>
+
 		</nav>
 	</header>
+	<div class="row">
+		<fieldset class="col-sm-8 col-lg-9">
 
-	<div class="container destaque">
-		<section class="busca">
-			<h2>Busca</h2>
-			<form>
-				<input type="search" />
-				<input type="image" src="img/busca.png" />
-			</form>
-		</section>
+			<div class="col-sm-8  col-lg-9">
+					<section class="busca">
+						<h2>Busca</h2>
+						<form>
+							<input type="search" />
+							<input type="image" src="img/busca.png" />
+						</form>
+					</section>
 
-		<section class="menu-departamentos">
-			<nav class="navbar-inverse">
-				<h2>Departamentos</h2>
-				<ul class="departamentos-lista">
-					<li><a href="#">Blusas e Camisas</a>
-						<ul class="sublista">
-							<li><a href="#">Manga curta</a></li>
-							<li><a href="#">Manga comprida</a></li>
-							<li><a href="#">Camisa social</a></li>
-							<li><a href="#">Camisa casual</a></li>
+				<section class="menu-departamentos">
+					<nav class="navbar-inverse">
+						<h2>Departamentos</h2>
+						<ul class="departamentos-lista">
+							<li><a href="#">Blusas e Camisas</a>
+								<ul class="sublista">
+									<li><a href="#">Manga curta</a></li>
+									<li><a href="#">Manga comprida</a></li>
+									<li><a href="#">Camisa social</a></li>
+									<li><a href="#">Camisa casual</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Calças</a>
+								<ul class="sublista">
+									<li><a href="#">Calça preta</a></li>
+									<li><a href="#">Calça branco</a></li>
+									<li><a href="#">Calça bege</a></li>
+									<li><a href="#">Calça social</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Saias</a>
+								<ul class="sublista">
+									<li><a href="#">Saia preta</a></li>
+									<li><a href="#">Saia branco</a></li>
+									<li><a href="#">Saia vermelha</a></li>
+									<li><a href="#">Saia social</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Vestidos</a>
+								<ul class="sublista">
+									<li><a href="#">Vestido preto</a></li>
+									<li><a href="#">Vestido branco</a></li>
+									<li><a href="#">Vestido bege</a></li>
+									<li><a href="#">Vestido vermelho</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Sapatos</a>
+								<ul class="sublista">
+									<li><a href="#">Sapato preto</a></li>
+									<li><a href="#">Sapato branco</a></li>
+									<li><a href="#">Sapato marron</a></li>
+									<li><a href="#">Sapato social</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Bolsas e Carteiras</a>
+								<ul class="sublista">
+									<li><a href="#">Bolsa preta</a></li>
+									<li><a href="#">Carteira branca</a></li>
+									<li><a href="#">Bolsa marron</a></li>
+									<li><a href="#">Carteira social</a></li>
+								</ul>
+							</li>
+						
 						</ul>
-					</li>
-					<li><a href="#">Calças</a>
-						<ul class="sublista">
-							<li><a href="#">Calça preta</a></li>
-							<li><a href="#">Calça branco</a></li>
-							<li><a href="#">Calça bege</a></li>
-							<li><a href="#">Calça social</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Saias</a>
-						<ul class="sublista">
-							<li><a href="#">Saia preta</a></li>
-							<li><a href="#">Saia branco</a></li>
-							<li><a href="#">Saia vermelha</a></li>
-							<li><a href="#">Saia social</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Vestidos</a>
-						<ul class="sublista">
-							<li><a href="#">Vestido preto</a></li>
-							<li><a href="#">Vestido branco</a></li>
-							<li><a href="#">Vestido bege</a></li>
-							<li><a href="#">Vestido vermelho</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Sapatos</a>
-						<ul class="sublista">
-							<li><a href="#">Sapato preto</a></li>
-							<li><a href="#">Sapato branco</a></li>
-							<li><a href="#">Sapato marron</a></li>
-							<li><a href="#">Sapato social</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Bolsas e Carteiras</a>
-						<ul class="sublista">
-							<li><a href="#">Bolsa preta</a></li>
-							<li><a href="#">Carteira branca</a></li>
-							<li><a href="#">Bolsa marron</a></li>
-							<li><a href="#">Carteira social</a></li>
-						</ul>
-					</li>
-				
-				</ul>
-			</nav>
-		</section>
+					</nav>
+				</section>
 
-		<img src="img/destaque-home.png" alt="Promoção: Big City Night">
+				<img src="img/destaque-home.png" alt="Promoção: Big City Night">
+			</div>
+		</fieldset>
 	</div>
-
 	<div class="container paineis">
 		<section class="painel novidades">
 			<h2>Novidades</h2>
@@ -159,7 +156,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.html">
+					<a href="produto.php">
 						<figure>
 							<img src="img/produtos/miniatura10.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -167,7 +164,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.html">
+					<a href="produto.php">
 						<figure>
 							<img src="img/produtos/miniatura11.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Mirror Fashion</title>
-</head>
+<html lang="pt-br">
+
+
 <body>
+<?php 
+	$cabecalho_title ="Produto da Mirror Fashion";
+	 include("./php/cabecalho.php");?>
+     <?php $links;
+     include("./php/links.php");?>
+
+
     <h1>Ótima escolha!</h1>
     <p>Obrigado por comprar na Mirror Fashion!
         Preencha seus dados para efetivar a compra.
