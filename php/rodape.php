@@ -1,6 +1,6 @@
 
 <footer>
-		<div class="container">
+		<div class="container col-md-12">
 			<img src="img/logo-rodape.png" alt="Logo Mirror Fashion" />
 
 			<ul class="social">

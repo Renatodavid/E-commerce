@@ -16,7 +16,7 @@
 	$cabecalho_title ="Produto da Mirror Fashion";
 	 include("./php/cabecalho.php");?>
 	 
-	<div class="produto">
+	<div class="produto ">
 				<h1>Fuzzy Cardigan</h1>
 				<p>por apenas R$ 129,00</p>
 

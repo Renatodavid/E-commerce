@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default col-md-10">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.php">Mirror Fashion</a>
 			</div>
