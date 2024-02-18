@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html>
+	<title>
 
-<head>
-	<title>Mirror Fashion</title>
+			<?php $links ="links css js";
+		include("./php/links.php");?>
+	</title>
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/mobile.css"media="(max-width:939px)">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/bootstrap-flatly.css"> 
-
-</head>
 
 <body>
 	<header class="container">
@@ -163,7 +156,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.html">
+					<a href="produto.php">
 						<figure>
 							<img src="img/produtos/miniatura10.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -171,7 +164,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.html">
+					<a href="produto.php">
 						<figure>
 							<img src="img/produtos/miniatura11.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
