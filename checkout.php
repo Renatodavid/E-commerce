@@ -18,8 +18,8 @@
                 <p class="lead">Obrigado por comprar na Mirror Fashion!
                         Preencha seus dados para efetivar a compra.</p>
        
-            </div><!-- fim .container dentro do jumbotron -->
-        </div><!-- fim .jumbotron -->
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -28,7 +28,7 @@
                 <div class="card mb-3">
                 <div class="card-header">
                 <h2>Sua compra</h2>
-            </div><!-- fim .card-header -->
+            </div>
 
         <div class="card-body"></div>
 
@@ -47,8 +47,8 @@
              <dt>Preço</dt>
              <dd id="preco">R$ 48,95</dd>
          </dl>
-                </div><!-- fim .card-body -->
-            </div><!-- fim .card mb-3? -->
+                </div>
+            </div>
 
             <div class="card mb-3">
                 <div class="card-body">
@@ -66,7 +66,7 @@
                 </div>
                </div>
 
-        </div><!-- fim .col-md-4 -->
+        </div>
             
             <form class="col-md-8">
                 <div class="row">
@@ -124,11 +124,11 @@
                     <span class="oi oi-thumb-up"></span>
                     Confirmar Pedido
                 </button>
-            </div><!-- fim .col-lg-6 -->
-        </div><!-- fim .row -->
-            </form><!-- fim .col-md-8 -->
-            </div><!-- fim .row -->
-        </div><!-- fim .container da pagina -->
+            </div>
+        </div>
+            </form>
+            </div>
+        </div>
 
      </body>
  </html>
