@@ -39,3 +39,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function(){
+  // Inicia o carrossel
+  var myCarousel = document.querySelector('#carouselExampleSlidesOnly');
+  var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 4000 // Define o intervalo de tempo para 4 segundos
+  });
+});

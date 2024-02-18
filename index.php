@@ -257,5 +257,5 @@ include ("./php/rodape.php"); ?>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>
 </body>
-
+<!--Criado por Renato Marques david-->
 </html>
