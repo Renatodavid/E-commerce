@@ -46,3 +46,10 @@ document.addEventListener('DOMContentLoaded', function(){
       interval: 4000 // Define o intervalo de tempo para 4 segundos
   });
 });
+
+document.querySelector('input[type=email').oninvalid = function(){
+  this.setCustomValidity("");
+  if(!this.validity.valid){
+    this.setCustomValidity("Email inválido");
+  }
+}

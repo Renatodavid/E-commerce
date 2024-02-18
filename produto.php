@@ -50,12 +50,7 @@
 			      	<input type="submit" class="comprar" value="Comprar">
 			  	</form>
 			</div>
-			<table>
-				<caption>Quantidade e preço de camiseteas</caption>
-				<colgroup>
-				</col width="10%">
-			</colgroup>
-			</table>
+		
 	
 	<?php include("./php/rodape.php");?>
 	</body>
