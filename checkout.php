@@ -32,7 +32,7 @@
 
         <div class="card-body"></div>
 
-        <img src="img/produtos/foto2-verde.png" alt="Camiseta Ecko Caveira na cor verde"
+        <img src="img/produtos/miniatura1.png" alt="Camiseta Ecko florida na cor vermelha"
         class="img-thumbnail mb-3">
          <dl>
              <dt>Produto</dt>
