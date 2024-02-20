@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" >
             <div class="row">
             
             <div class="col-md-4">
@@ -32,20 +32,20 @@
 
         <div class="card-body"></div>
 
-        <img src="img/produtos/miniatura1.png" alt="Camiseta Ecko florida na cor vermelha"
+        <img src="img/produtos/miniatura1.png" alt="Fuzyy Cardian"
         class="img-thumbnail mb-3">
          <dl action="checkout.php" method="$_POST">
              <dt>Produto</dt>
-             <dd><?= $_POST ['nome']?> </dd>
+             <dd><?= isset($_POST['nome']) ? $_POST['nome'] : '' ?></dd>
 
              <dt>Cor</dt>
-             <dd><?= $_POST['cor'] ?></dd>
+             <dd><?= isset($_POST['nome']) ? $_POST['cor'] : '' ?></dd>
 
              <dt>Tamanho</dt>
-             <dd><?= $_POST['tamanho']?> </dd>
+             <dd><?= isset($_POST['nome']) ? $_POST['tamanho'] : '' ?></dd>
 
              <dt>Preço</dt>
-             <dd id="preco"><?= $_POST ['preco'] ?></dd>
+             <dd id="preco"><?= isset($_POST['nome']) ? $_POST['preco'] : '' ?></dd>
          </dl>
                 </div>
             </div>
@@ -68,7 +68,7 @@
 
         </div>
             
-            <form class="col-md-8">
+        <form action="checkout.php" method="post" class="col-md-8">
                 <div class="row">
                     <fieldset class="col-lg-6">
                     <legend>Dados pessoais</legend>

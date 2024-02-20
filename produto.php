@@ -24,17 +24,17 @@
 			    	<fieldset class="cores">
 			        	<legend>Escolha a cor</legend>
 
-						<input type="radio" name="cor" value="verde" id="verde" <?= isset($_POST['cor']) && $_POST['cor'] === 'verde' ? 'checked' : '' ?>>
+						<input type="radio" name="cor" value="verde" id="verde" <?= isset($_POST['id']) && $_POST['cor'] === 'verde' ? 'checked' : '' ?>>
 			          	<label for="verde">
 			            	<img src="img/produtos/foto1-verde.png" alt="verde">
 			         	</label>
 			          
-						 <input type="radio" name="cor" value="rosa" id="rosa" <?= isset($_POST['cor']) && $_POST['cor'] === 'rosa' ? 'checked' : '' ?>>
+						 <input type="radio" name="cor" value="rosa" id="rosa" <?= isset($_POST['id']) && $_POST['cor'] === 'rosa' ? 'checked' : '' ?>>
 			          	<label for="rosa">
 			            	<img src="img/produtos/foto1-rosa.png" alt="rosa">
 			          	</label>
 			          
-			          	<input type="radio" name="cor" value="azul" id="azul" <?= isset($_POST['cor']) && $_POST['cor'] === 'azul' ? 'checked' : '' ?>>
+			          	<input type="radio" name="cor" value="azul" id="azul" <?= isset($_POST['id']) && $_POST['cor'] === 'azul' ? 'checked' : '' ?>>
 			          	<label for="azul">
 			            	<img src="img/produtos/foto1-azul.png" alt="azul">
 			          	</label>
