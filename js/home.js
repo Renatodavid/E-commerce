@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 document.querySelector('input[type=email').oninvalid = function(){
-  this.setCustomValidity("");
-  if(!this.validity.valid){
-    this.setCustomValidity("Email inválido");
+  this.setCustomValidity("");//remove mensagem de errod antgas
+  if(!this.validity.valid){//reexecuta a validação
+    this.setCustomValidity("Email inválido");// se inválido, coloca mensagem de erro
   }
 }

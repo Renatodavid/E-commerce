@@ -6,7 +6,7 @@
          <link rel="stylesheet" href="css/bootstrap.css">
          <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
          <link rel="stylesheet" href="css/checkout.css">
-         <script type="text/javascript" src="js/total.js"></script>
+        
 
          <title>Checkout Mirror Fashion</title>
      </head>
@@ -34,18 +34,18 @@
 
         <img src="img/produtos/miniatura1.png" alt="Camiseta Ecko florida na cor vermelha"
         class="img-thumbnail mb-3">
-         <dl>
+         <dl action="checkout.php" method="$_POST">
              <dt>Produto</dt>
-             <dd>Camiseta Ecko Caveira</dd>
+             <dd><?= $_POST ['nome']?> </dd>
 
              <dt>Cor</dt>
-             <dd>Verde</dd>
+             <dd><?= $_POST['cor'] ?></dd>
 
              <dt>Tamanho</dt>
-             <dd>42</dd>
+             <dd><?= $_POST['tamanho']?> </dd>
 
              <dt>Preço</dt>
-             <dd id="preco">R$ 48,95</dd>
+             <dd id="preco"><?= $_POST ['preco'] ?></dd>
          </dl>
                 </div>
             </div>
@@ -75,7 +75,7 @@
            
                     <div class="form-group">
                         <label for="nome">Nome completo</label>
-                        <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                        <input type="text" class="form-control" id="nome" name="nomae" autofocus required>
                     </div>
            
                     <div class="form-group">
@@ -125,10 +125,6 @@
                     Confirmar Pedido
                 </button>
             </div>
-        </div>
-            </form>
-            </div>
-        </div>
-
      </body>
+     <script type="text/javascript" src="js/home.js"></script>
  </html>
