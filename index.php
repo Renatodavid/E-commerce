@@ -17,7 +17,8 @@
 	<div class="container ">
   <div class="row">
     <div class="col-md-6 ">
-      <img src="img/destaque-home.png"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
+		
+      <img src="img/destaque-home.png" class="pause"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
     </div>
     <div class="col-md-6">
       <fieldset class="col-md-10">
@@ -256,6 +257,7 @@ include ("./php/rodape.php"); ?>
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/banner.js"> </script>
 </body>
 <!--Criado por Renato Marques david-->
 </html>

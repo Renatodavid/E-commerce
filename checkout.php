@@ -30,24 +30,24 @@
                 <h2>Sua compra</h2>
             </div>
 
-        <div class="card-body"></div>
+        <div class="card-body">
 
         <img src="img/produtos/miniatura1.png" alt="Fuzyy Cardian"
         class="img-thumbnail mb-3">
          <dl action="checkout.php" method="$_POST">
              <dt>Produto</dt>
-             <dd><?= isset($_POST['nome']) ? $_POST['nome'] : '' ?></dd>
+             <dd><?= isset($_POST['id']) ? $_POST['nome'] : '' ?></dd>
 
              <dt>Cor</dt>
-             <dd><?= isset($_POST['nome']) ? $_POST['cor'] : '' ?></dd>
+             <dd><?= isset($_POST['id']) ? $_POST['cor'] : '' ?></dd>
 
              <dt>Tamanho</dt>
-             <dd><?= isset($_POST['nome']) ? $_POST['tamanho'] : '' ?></dd>
+             <dd><?= isset($_POST['id']) ? $_POST['tamanho'] : '' ?></dd>
 
              <dt>Preço</dt>
              <dd id="preco"><?= isset($_POST['nome']) ? $_POST['preco'] : '' ?></dd>
          </dl>
-                </div>
+            </div>
             </div>
 
             <div class="card mb-3">
@@ -75,7 +75,7 @@
            
                     <div class="form-group">
                         <label for="nome">Nome completo</label>
-                        <input type="text" class="form-control" id="nome" name="nomae" autofocus required>
+                        <input type="text" class="form-control" id="nome" name="nome" autofocus required>
                     </div>
            
                     <div class="form-group">
@@ -127,4 +127,6 @@
             </div>
      </body>
      <script type="text/javascript" src="js/home.js"></script>
+     <script type="text/javascript" src="js/jquery.js"> </script>
+    <script type="text/javascript" src="js/bootstrap.js"> </script>
  </html>
