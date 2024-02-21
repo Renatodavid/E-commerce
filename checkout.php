@@ -31,9 +31,10 @@
             </div>
 
         <div class="card-body">
+        <img src="img/produtos/<?= isset($_POST['name']) ? $_POST['cor'] : '' ?>-<?= isset($_POST['name']) ? $_POST['cor'] : '' ?>.png" class="img-thumbnail img-responsive">
+<!-- Supondo que $_POST['id'] e $_POST['cor'] contenham as informações necessárias para determinar o nome da imagem  verificar porque não esta puxando ainda pelo input-->
+<img src="img/produtos/<?php echo isset($_POST['id']) && isset($_POST['cor']) ? $_POST['id'] . '-' . $_POST['cor'] . '.png' : 'miniatura1.png'; ?>" alt="Camisa Florida">
 
-        <img src="img/produtos/miniatura1.png" alt="Fuzyy Cardian"
-        class="img-thumbnail mb-3">
          <dl action="checkout.php" method="$_POST">
              <dt>Produto</dt>
              <dd><?= isset($_POST['id']) ? $_POST['nome'] : '' ?></dd>
