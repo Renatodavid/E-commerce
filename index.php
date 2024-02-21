@@ -21,7 +21,7 @@
       <img src="img/destaque-home.png" class="pause"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
     </div>
     <div class="col-md-6">
-      <fieldset class="col-md-10">
+      <fieldset class="col-md-12">
         <div class="col-md-11">
           <section class="busca col-md-12">
             <h2 class="col-md-10">Busca</h2>
