@@ -16,7 +16,7 @@
 	$cabecalho_title ="Produto da Mirror Fashion";
 	 include("./php/cabecalho.php");?>
 	 
-	<div class="produto">
+	<div class="produto ">
 				<h1>Fuzzy Cardigan</h1>
 				<p>por apenas R$ 129,00</p>
 
@@ -24,17 +24,17 @@
 			    	<fieldset class="cores">
 			        	<legend>Escolha a cor</legend>
 
-			          	<input type="radio" name="cor" value="verde" id="verde" checked>
+						<input type="radio" name="cor" value="verde" id="verde" <?= isset($_POST['id']) && $_POST['cor'] === 'verde' ? 'checked' : '' ?>>
 			          	<label for="verde">
 			            	<img src="img/produtos/foto1-verde.png" alt="verde">
 			         	</label>
 			          
-			          	<input type="radio" name="cor" value="rosa" id="rosa">
+						 <input type="radio" name="cor" value="rosa" id="rosa" <?= isset($_POST['id']) && $_POST['cor'] === 'rosa' ? 'checked' : '' ?>>
 			          	<label for="rosa">
 			            	<img src="img/produtos/foto1-rosa.png" alt="rosa">
 			          	</label>
 			          
-			          	<input type="radio" name="cor" value="azul" id="azul">
+			          	<input type="radio" name="cor" value="azul" id="azul" <?= isset($_POST['id']) && $_POST['cor'] === 'azul' ? 'checked' : '' ?>>
 			          	<label for="azul">
 			            	<img src="img/produtos/foto1-azul.png" alt="azul">
 			          	</label>
@@ -42,23 +42,18 @@
 
 			      	<fieldset class="tamanhos">
 						<legend>Escolha o tamanho:</legend>
-
-						<input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho" oninput="output.value = this.value">
-					 	<output name="output" for="tamanho" value="42">42
+						<input type="range" min="36" max="46" value="<?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?>" step="2" name="tamanho" id="tamanho" oninput="output.value = this.value">
+					 	<!----><output name="output" for="tamanho" value="42">
 				  	</fieldset>
 
 			      	<input type="submit" class="comprar" value="Comprar">
 			  	</form>
 			</div>
-			<table>
-				<caption>Quantidade e preço de camiseteas</caption>
-				<colgroup>
-				</col width="10%">
-			</colgroup>
-			</table>
+		
 	
 	<?php include("./php/rodape.php");?>
 	</body>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>
 </html>
+<!--Criado por Renato Marques david-->
