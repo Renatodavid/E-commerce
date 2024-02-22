@@ -24,29 +24,33 @@
             <div class="row">
             
             <div class="col-md-4">
-                <div class="card mb-3">
+                
                 <div class="card-header">
                 <h2>Sua compra</h2>
             </div>
 
-        <div class="card-body ">
-        <img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"class="img-thumbnail mb-3">
-         
-         <dl action="checkout.php" method="POST">
-             <dt>Produto</dt>
-             <dd><?= $_POST['nome'] ?></dd>
+        <div class="panel-body ">
+        <?php $id = $_POST["id"];
+        $cor = $_POST["cor"]; 
+        $caminhoImagem = "img/produtos/foto1" . $id . "-" . $cor . ".png";?>
+             <img src="<?php echo $caminhoImagem; ?>" class="img-thumbnail img-responsive">
 
-             <dt>Cor</dt>
-             <dd><?= $_POST['cor'] ?></dd>
+            <dl action="checkout.php" method="POST">
+                <dt>Produto</dt>
+                <dd><?= $_POST['nome'] ?></dd>
 
-             <dt>Tamanho</dt>
-             <dd><?= $_POST['tamanho'] ?></dd>
+                <dt>Preço</dt>
+                <dd id="preco"><?= $_POST['preco'] ?></dd>
 
-             <dt>Preço</dt>
-             <dd id="preco">R$ 129,90</dd>
-         </dl>
-            </div>
-            </div>
+                <dt>Cor</dt>
+                <dd><?= $_POST['cor'] ?></dd>
+
+                <dt>Tamanho</dt>
+                <dd><?= $_POST['tamanho'] ?></dd>
+
+            </dl>
+            
+        </div>
 
             <div class="card mb-3">
                 <div class="card-body">
@@ -58,7 +62,9 @@
                
                   <div class="form-group">
                     <label for="total">Total:</label>
-                    <output for="qtd preco" id="total" class="form-control">R$ 48,95</output>
+                    <output for="qtd preco" id="total" class="form-control">]
+                        <?= $_POST["preco"]?>
+                    </output>
                   </div>
                
                 </div>
@@ -130,4 +136,7 @@
     <script type="text/javascript" src="js/testaConversao.js"></script>
     <script type="text/javascrpit" src="js/converteMoeda.js"></script>
     <script type="text/javascrpit" src="js/validarEmail.js"></script>
+    <script type="text/javascrpit" src="js/total.js"></script>
+    <script type="text/javascript" src="js/converteMoeda.js"></script>
+<script type="text/javascript" src="js/testaConversao.js"></script>
  </html>

@@ -64,6 +64,9 @@
 	<?php include("./php/rodape.php");?>
 	
 	<script type="text/javascript" src="js/produto.js"> </script>
+	<script type="text/javascript" src="js/converteMoeda.js"></script>
+	<script type="text/javascript" src="js/testaConversao.js"></script>
+	
 	
 	</body>
 </html>
