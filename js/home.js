@@ -1,12 +1,4 @@
 
-$('.novidades button').click(function() {
-  $('.novidades').addClass('painel-aberto');
-  });
-  
-  $('.novidades button').click(function() {
-  $('.novidades').toggleClass('painel-aberto');
-  });
-
 document.addEventListener('DOMContentLoaded', (event) => {
   let menuItems = document.querySelectorAll('.departamentos-lista > li > a');
 
@@ -29,9 +21,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-document.querySelector('input[type=email').oninvalid = function(){
-  this.setCustomValidity("");//remove mensagem de errod antgas
-  if(!this.validity.valid){//reexecuta a validação
-    this.setCustomValidity("Email inválido");// se inválido, coloca mensagem de erro
-  }
-}
