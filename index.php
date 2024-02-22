@@ -14,12 +14,22 @@
 		<?php $navbar ="navbar";
 		include ("./php/navbar.php"); ?>
 	</header>
-	<div class="container ">
-  <div class="row">
-    <div class="col-md-6 ">
-		
-      <img src="img/destaque-home.png" class="pause"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
-    </div>
+	<div class="destaque">
+
+			<div class="container destaque">
+
+				<section class="banner-destaque">
+				<figure>
+				<a href="#" class="pause"> 
+				<img src="img/destaque-home.png" alt="Promoção: Big City Night">
+				</a>
+				</figure>
+				</section>
+
+			</div>
+		</div>
+
+</div>
     <div class="col-md-6">
       <fieldset class="col-md-12">
         <div class="col-md-11">
@@ -255,9 +265,11 @@
 <?php $rodape ="rodape";
 include ("./php/rodape.php"); ?>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/home.js"></script>
-	<script type="text/javascript" src="js/banner.js"> </script>
+	
+	
+<script type="text/javascript" src="js/banner.js"> </script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
 </body>
 <!--Criado por Renato Marques david-->
 </html>
