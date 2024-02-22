@@ -25,3 +25,11 @@
         // Faça o que quiser com a lista de URLs das imagens aqui
     });
 });
+function redirect(cor) {
+  // Obtém o formulário
+  var form = document.getElementById("checkoutForm");
+  // Define o valor do campo de cor no formulário
+  form.elements["cor"].value = cor;
+  // Envia o formulário
+  form.submit();
+}

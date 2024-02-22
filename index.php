@@ -268,6 +268,8 @@ include ("./php/rodape.php"); ?>
 <script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript" src="js/novidades.js"></script>
 <script type="text/javascript" src="js/verificarImg.js"></script>
+<script type="text/javascript" src="js/converteMoeda.js"></script>
+<script type="text/javascript" src="js/testaConversao.js"></script>
 
 </body>
 <!--Criado por Renato Marques david-->
