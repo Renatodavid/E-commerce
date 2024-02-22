@@ -7,6 +7,7 @@
          <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
          <link rel="stylesheet" href="css/checkout.css">
         
+        
 
          <title>Checkout Mirror Fashion</title>
      </head>
@@ -30,22 +31,23 @@
                 <h2>Sua compra</h2>
             </div>
 
-        <div class="card-body">
-
-        <img src="img/produtos/miniatura1.png" alt="Fuzyy Cardian"
-        class="img-thumbnail mb-3">
-         <dl action="checkout.php" method="$_POST">
+        <div class="card-body ">
+        <?php
+        $imagem_url = isset($_GET['imagem']) ? $_GET['imagem'] : 'img/produtos/foto1-verde.png';
+            ?>
+            <img src="<?php echo $imagem_url; ?>" alt="Camisa Florida" class="img-thumbnail img-responsive">
+         <dl action="checkout.php" method="POST">
              <dt>Produto</dt>
-             <dd><?= isset($_POST['id']) ? $_POST['nome'] : '' ?></dd>
+             <dd><?= isset($_POST['id']) ? $_POST['nome'] : 'camisa florida' ?></dd>
 
              <dt>Cor</dt>
-             <dd><?= isset($_POST['id']) ? $_POST['cor'] : '' ?></dd>
+             <dd><?= isset($_POST['id']) ? $_POST['cor'] : 'verde' ?></dd>
 
              <dt>Tamanho</dt>
-             <dd><?= isset($_POST['id']) ? $_POST['tamanho'] : '' ?></dd>
+             <dd><?= isset($_POST['id']) ? $_POST['tamanho'] : '42' ?></dd>
 
              <dt>Preço</dt>
-             <dd id="preco"><?= isset($_POST['nome']) ? $_POST['preco'] : '' ?></dd>
+             <dd id="preco"><?= isset($_POST['nome']) ? $_POST['preco'] : 'R$192,35' ?></dd>
          </dl>
             </div>
             </div>
@@ -129,4 +131,6 @@
      <script type="text/javascript" src="js/home.js"></script>
      <script type="text/javascript" src="js/jquery.js"> </script>
     <script type="text/javascript" src="js/bootstrap.js"> </script>
+    <script type="text/javascrpit" src="js/converteMoeda.js"></script>
+    <script type="text/javascrpit" src="js/validarEmail.js"></script>
  </html>

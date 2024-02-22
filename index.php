@@ -15,10 +15,11 @@
 		include ("./php/navbar.php"); ?>
 	</header>
 	<div class="container ">
-  <div class="row">
-    <div class="col-md-6 ">
+ 		 <div class="row">
+   		 <div class="banner-destaque col-md-6 ">
 		
-      <img src="img/destaque-home.png" class="pause"  alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
+      <img src="img/destaque-home.png" class="pause" 
+	   alt="Promoção: Big City Night" style="max-width: 100%; height: auto; margin:20px;">
     </div>
     <div class="col-md-6">
       <fieldset class="col-md-12">
@@ -97,7 +98,7 @@
 			<h2>Novidades</h2>
 			<ol>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto1-verde.png">
 						<figure>
 							<img src="img/produtos/miniatura1.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -105,15 +106,17 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+					
+				<a href="produto.php?imagem=img/produtos/foto2-verde.png">
 						<figure>
 							<img src="img/produtos/miniatura2.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						
 						</figure>
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto3-azul.png">
 						<figure>
 							<img src="img/produtos/miniatura3.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -121,7 +124,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto4-verde.png">
 						<figure>
 							<img src="img/produtos/miniatura4.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -129,7 +132,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto5-rosa.png">
 						<figure>
 							<img src="img/produtos/miniatura5.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -137,7 +140,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto10-azul.png">
 						<figure>
 							<img src="img/produtos/miniatura6.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -145,7 +148,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto3-verde.png">
 						<figure>
 							<img src="img/produtos/miniatura10.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -153,7 +156,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/foto11-azul.png">
 						<figure>
 							<img src="img/produtos/miniatura11.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -161,7 +164,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura13.png">
 						<figure>
 							<img src="img/produtos/miniatura13.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -169,22 +172,24 @@
 					</a>
 				</li>
 			</ol>
-			<button type="button">Mostrar mais</button>
-		</section>
+			<button type="button" class="button">Mostrar mais</button>
 
+		</section>
+		
 		<section class="painel mais-vendidos">
 			<h2>Mais Vendidos</h2>
 			<ol>
 				<li>
-					<a href="produto.php">
-						<figure>
-							<img src="img/produtos/miniatura7.png">
-							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-						</figure>
-					</a>
+				<a href="produto.php?imagem=img/produtos/miniatura7.png">
+					<figure>
+   					 	<img src="img/produtos/miniatura7.png" alt="Imagem Verde">
+						<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+					</figure>
+				</a>
+					
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura8.png">
 						<figure>
 							<img src="img/produtos/miniatura8.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -192,7 +197,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura9.png">
 						<figure>
 							<img src="img/produtos/miniatura9.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -200,7 +205,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura10.png">
 						<figure>
 							<img src="img/produtos/miniatura10.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -208,7 +213,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura11.png">
 						<figure>
 							<img src="img/produtos/miniatura11.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -216,7 +221,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura12.png">
 						<figure>
 							<img src="img/produtos/miniatura12.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -224,7 +229,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura13.png">
 						<figure>
 							<img src="img/produtos/miniatura13.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -232,7 +237,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura14.png">
 						<figure>
 							<img src="img/produtos/miniatura14.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -240,7 +245,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="produto.php">
+				<a href="produto.php?imagem=img/produtos/miniatura15.png">
 						<figure>
 							<img src="img/produtos/miniatura15.png">
 							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -248,16 +253,22 @@
 					</a>
 				</li>
 			</ol>
-			<button type="button">Mostrar mais</button>
+			<button type="button" class="button">Mostrar mais</button>
+
 		</section>
 	</div>
 
 <?php $rodape ="rodape";
 include ("./php/rodape.php"); ?>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/home.js"></script>
-	<script type="text/javascript" src="js/banner.js"> </script>
+	
+	
+<script type="text/javascript" src="js/banner.js"> </script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/novidades.js"></script>
+<script type="text/javascript" src="js/verificarImg.js"></script>
+
 </body>
 <!--Criado por Renato Marques david-->
 </html>
