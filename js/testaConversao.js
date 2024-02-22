@@ -1,8 +1,8 @@
 var formatado = numberParaReal(9.9);
 var numero = realParaNumber("R$ 120,35");
 
-if(formatado == "R$ 9,90" ){
+if (formatado === "R$ 9,90") {
     console.log("Conversão de moeda está funcionando");
-}else{
-    console.log("Conversão de moeda esta com erro!");
+} else {
+    console.log("Conversão de moeda está com erro!");
 }

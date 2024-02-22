@@ -59,6 +59,41 @@
 				</form>
 
 			</div>
+			<div class="detalhes">
+                <h2> Detalhe do Produto </h2>
+                <p> Esse é o melhor casaco de Cardigã que você já viu. Excelente
+                    material italiano com estampa desenhada pelos artesãos da
+                    comunidade de Krotor nas ilhas gregas. Compre já e receba hoje
+                    mesmo pela nossa entrega a jato.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Caracteristicas </th>
+                            <th> Detalhe </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Modelo </td>
+                            <td> Cardigan </td>
+                        </tr>
+                        <tr>
+                            <td> Material </td>
+                            <td> Algodão Poliester </td>
+                        </tr>
+                        <tr>
+                            <td> Cores </td>
+                            <td>Azul, Rosa e Verde </td>
+                        </tr>
+                        <tr>
+                            <td> Lavagem </td>
+                            <td> Lavar a Mão </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 		
 	
 	<?php include("./php/rodape.php");?>
