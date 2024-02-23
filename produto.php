@@ -40,6 +40,7 @@
 						</label>
 
 						<input type="radio" name="cor" value="azul" id="azul" <?= isset($_POST['cor']) && $_POST['cor'] === 'azul' ? 'checked' : '' ?>>
+						<input type="radio" name="cor" value="azul" id="azul">
 						<label for="azul">
 							<img src="img/produtos/foto1-azul.png" alt="Camisa na cor Azul" class="img-thumbnail img-responsive">
 						
@@ -49,10 +50,11 @@
 
 					<fieldset class="tamanhos">
 						<legend>Escolha o tamanho:</legend>
-						<input type="range" min="36" max="46" value="<?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?>" step="2" name="tamanho" id="tamanho" oninput="output.value = this.value">
+						<input type="range" min="36" max="46" value="<?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?>
+						" step="2" name="tamanho" id="tamanho" oninput="output.value = this.value">
 						
-						<output id="output" for="tamanho"><?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?></output>
-					
+						<output id="output" for="tamanho" name="valortamanho"><?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?></output>
+
 					</fieldset>
 
 					<input type="submit" class="comprar" value="Comprar">
@@ -61,10 +63,9 @@
 			</div>
 			<div class="detalhes">
                 <h2> Detalhe do Produto </h2>
-                <p> Esse é o melhor casaco de Cardigã que você já viu. Excelente
-                    material italiano com estampa desenhada pelos artesãos da
-                    comunidade de Krotor nas ilhas gregas. Compre já e receba hoje
-                    mesmo pela nossa entrega a jato.</p>
+                <p><?php 
+				$descricao;
+	 				include("./php/descricao.php");?></p>
                 <table>
                     <thead>
                         <tr>
