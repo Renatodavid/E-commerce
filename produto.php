@@ -17,7 +17,7 @@
 	$cabecalho_title ="Produto da Mirror Fashion";
 	 include("./php/cabecalho.php");?>
 	 <!--verificar o pq nao esta puxando as imagens corretamente aviso-->
-	<div class="produto col-md-12">
+	<div class="produto ">
 				<h1>Fuzzy Cardigan</h1>
 				<p>por apenas R$ 129,00</p>
 
@@ -40,7 +40,7 @@
 						</label>
 
 						<input type="radio" name="cor" value="azul" id="azul" <?= isset($_POST['cor']) && $_POST['cor'] === 'azul' ? 'checked' : '' ?>>
-						<input type="radio" name="cor" value="azul" id="azul">
+						
 						<label for="azul">
 							<img src="img/produtos/foto1-azul.png" alt="Camisa na cor Azul" class="img-thumbnail img-responsive">
 						

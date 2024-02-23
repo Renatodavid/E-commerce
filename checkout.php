@@ -30,17 +30,17 @@
             </div>
 
         <div class="panel-body " method="POST">
-        <?php $id = $_POST["id"];
-        $cor = $_POST["cor"]; 
-        $caminhoImagem = "img/produtos/foto1" . $id . "-" . $cor . ".png";?>
+        <?php $nome = $_POST["nome"];
+                 $cor = $_POST["cor"]; 
+                    $caminhoImagem = "img/produtos/foto1" . $nome . "-" . $cor . ".png";?>
              <img src="<?php echo $caminhoImagem; ?>" class="img-thumbnail img-responsive">
 
             <dl action="checkout.php" method="POST">
                 <dt>Produto</dt>
-                <dd><?= $_POST['nome'] ?></dd>
+                <dd><?= $_POST['nome']  ?></dd>
 
                 <dt>Preço</dt>
-                <dd id="preco"><?= $_POST['preco'] ?></dd>
+                <dd><?= ($_POST['preco'])  ?></dd>
 
                 <dt>Cor</dt>
                 <dd><?= $_POST['cor'] ?></dd>
@@ -52,18 +52,22 @@
             
         </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3" method="POST">
                 <div class="card-body">
                
                   <div class="form-group">
                     <label for="qtd">Quantidade:</label>
-                    <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                    <input type="number" id="qtd"name="qtd" min="1" max="99" value="1" class="form-control">
+                   
+
                   </div>
                
                   <div class="form-group">
                     <label for="total">Total:</label>
-                    <output for="qtd preco" id="total" class="form-control">]
-                        <?= $_POST["preco"]?>
+                    <output for="total" id="total" name="total" class="form-control">
+                    <dd><?=($_POST['total']) ?></dd>
+
+                       
                     </output>
                   </div>
                
@@ -133,10 +137,10 @@
      <script type="text/javascript" src="js/home.js"></script>
      <script type="text/javascript" src="js/jquery.js"> </script>
     <script type="text/javascript" src="js/bootstrap.js"> </script>
-    <script type="text/javascript" src="js/testaConversao.js"></script>
-    <script type="text/javascrpit" src="js/converteMoeda.js"></script>
     <script type="text/javascrpit" src="js/validarEmail.js"></script>
-    <script type="text/javascrpit" src="js/total.js"></script>
+
     <script type="text/javascript" src="js/converteMoeda.js"></script>
-<script type="text/javascript" src="js/testaConversao.js"></script>
- </html>
+    <script type="text/javascript" src="js/testaConversao.js"></script>
+    <script type="text/javascrpit" src="js/total.js"></script>
+
+    </html>
