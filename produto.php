@@ -40,6 +40,7 @@
 						</label>
 
 						<input type="radio" name="cor" value="azul" id="azul" <?= isset($_POST['cor']) && $_POST['cor'] === 'azul' ? 'checked' : '' ?>>
+						<input type="radio" name="cor" value="azul" id="azul">
 						<label for="azul">
 							<img src="img/produtos/foto1-azul.png" alt="Camisa na cor Azul" class="img-thumbnail img-responsive">
 						
@@ -49,16 +50,51 @@
 
 					<fieldset class="tamanhos">
 						<legend>Escolha o tamanho:</legend>
-						<input type="range" min="36" max="46" value="<?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?>" step="2" name="tamanho" id="tamanho" oninput="output.value = this.value">
+						<input type="range" min="36" max="46" value="<?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?>
+						" step="2" name="tamanho" id="tamanho" oninput="output.value = this.value">
 						
-						<output id="output" for="tamanho"><?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?></output>
-					
+						<output id="output" for="tamanho" name="valortamanho"><?= isset($_POST['tamanho']) ? $_POST['tamanho'] : '42' ?></output>
+
 					</fieldset>
 
 					<input type="submit" class="comprar" value="Comprar">
 				</form>
 
 			</div>
+			<div class="detalhes">
+                <h2> Detalhe do Produto </h2>
+                <p><?php 
+				$descricao;
+	 				include("./php/descricao.php");?></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Caracteristicas </th>
+                            <th> Detalhe </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Modelo </td>
+                            <td> Cardigan </td>
+                        </tr>
+                        <tr>
+                            <td> Material </td>
+                            <td> Algodão Poliester </td>
+                        </tr>
+                        <tr>
+                            <td> Cores </td>
+                            <td>Azul, Rosa e Verde </td>
+                        </tr>
+                        <tr>
+                            <td> Lavagem </td>
+                            <td> Lavar a Mão </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 		
 	
 	<?php include("./php/rodape.php");?>

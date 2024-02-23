@@ -29,7 +29,7 @@
                 <h2>Sua compra</h2>
             </div>
 
-        <div class="panel-body ">
+        <div class="panel-body " method="POST">
         <?php $id = $_POST["id"];
         $cor = $_POST["cor"]; 
         $caminhoImagem = "img/produtos/foto1" . $id . "-" . $cor . ".png";?>
