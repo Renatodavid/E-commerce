@@ -1,26 +1,14 @@
-// Seleciona os elementos do DOM
-const inputQuantidade = document.querySelector("#qtd");
-const outputTotal = document.querySelector("#total");
-const preco = document.querySelector("#preco");
+var  $input_quantidade = document.querySelector("#qt");
+var $output_total = document.querySelector("#total");
 
-// Associa o evento 'input' ao inputQuantidade
-inputQuantidade.addEventListener('input', calcularEMostrarTotal);
+$input_quantidade.oninput = calculaEMostraTotal;
 
-// Função para calcular e mostrar o total
-function calcularEMostrarTotal() {
-    const quantidade = parseFloat(inputQuantidade.value);
-    const valorUnitario = parseFloat(preco.textContent.replace('R$', '').replace(',', '.'));
+function calculaEMostraTotal(){
+    var quantidade = $input_quantidade.value;
+    
+    var valorUnitarioTexto = document.querySelector("#preco").textContent;
+    var valorUnitarioNumero = realParaNumber(valorUnitarioTexto);
 
-    if (isNaN(quantidade) || isNaN(valorUnitario)) {
-        outputTotal.textContent = 'Valor inválido';
-        return;
-    }
-
-    const total = formatarMoeda(quantidade * valorUnitario);
-    outputTotal.textContent = total;
-}
-
-// Função para formatar um número como moeda (R$)
-function formatarMoeda(valor) {
-    return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        var total = numberParaReal(quantidade * valorUnitarioNumero);
+        $output_total.value = total;
 }
