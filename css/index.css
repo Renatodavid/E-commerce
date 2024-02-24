@@ -1,0 +1,46 @@
+
+.painel li:nth-child(1n):hover {
+	transform: scale(1.2) rotate(5deg);
+}
+.painel li {
+	transition: 0.7s;
+}
+.painel li:hover {
+	transition: 0.7s ease-in;
+}
+.painel li {
+	transition: 0.7s ease-out;
+}
+	
+	
+.painel li:nth-child(n+10) {
+	display: none;
+}
+	
+.painel-aberto li:nth-child(n+10) {
+	display: inline-block;
+}
+
+
+.painel li:nth-child(1n):hover {
+	transform: scale(1.2) rotate(5deg);
+	}
+	.painel li {
+	transition: 0.7s;
+	}
+	.painel li:hover {
+	transition: 0.7s ease-in;
+	}
+	.painel li {
+	transition: 0.7s ease-out;
+	}
+	
+	
+	.painel li:nth-child(n+10) {
+	display: none;
+	}
+	
+	.painel-aberto li:nth-child(n+10) {
+	display: inline-block;
+}
+	

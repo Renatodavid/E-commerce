@@ -27,7 +27,7 @@
 
 						<input type="radio" name="cor" value="verde" id="verde" <?= isset($_POST['cor']) && $_POST['cor'] === 'verde' ? 'checked' : '' ?>>
 						<label for="verde">
-							<img src="img/produtos/foto1-verde.png" alt="Camisa na cor Verde" class="img-thumbnail img-responsive">
+							<img src="img/produtos/foto1-verde.png" name="nome" alt="Camisa na cor Verde" class="img-thumbnail img-responsive">
 						
 						</label>
 						
@@ -102,6 +102,7 @@
 	<script type="text/javascript" src="js/produto.js"> </script>
 	<script type="text/javascript" src="js/converteMoeda.js"></script>
 	<script type="text/javascript" src="js/testaConversao.js"></script>
+	<script type="text/javascrpit" src="js/total.js"></script>
 	
 	
 	</body>
