@@ -2,21 +2,30 @@
 <html>
 	
 	<meta name="viewport" content="width=device-width">
-	
-	
 	<link rel="stylesheet" href="css/mobile.css"media="(max-width:939px)">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap-flatly.css">
 	<link rel="stylesheet" href="css/produto.css">
 	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/novoindex.css">
+
 	
 	
 
 	<body>
-	<?php 
-	$cabecalho_title ="Produto da Mirror Fashion";
-	 include("./php/cabecalho.php");?>
-	 <!--verificar o pq nao esta puxando as imagens corretamente aviso-->
+	<nav class="navbar navbar-default col-md-12">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.php">Mirror Fashion</a>
+			</div>
+			<ul class="nav navbar-nav">
+			<li><a href="#">Sua Conta</a></li>
+				<li><a href="#">Lista de Desejos</a></li>
+				<li><a href="#">Cartão Fidelidade</a></li>
+				<li><a href="sobre.php">Sobre</a></li>
+				<li><a href="#">Ajuda</a></li>
+			</ul>
+</nav>
+	
 	<div class="produto ">
 				<h1>Fuzzy Cardigan</h1>
 				<p>por apenas R$ 129,00</p>
@@ -96,8 +105,17 @@
         </div>
     </div>
 		
-	
-	<?php include("./php/rodape.php");?>
+	<footer class="row col-md-12">
+		<div class="container">
+			<img src="img/logo-rodape.png" alt="Logo Mirror Fashion" />
+
+			<ul class="social">
+				<li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+				<li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+				<li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+			</ul>
+		</div>
+	</footer>
 	
 	<script type="text/javascript" src="js/produto.js"> </script>
 	<script type="text/javascript" src="js/converteMoeda.js"></script>
