@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="container">
 		<div class="container col-md-12">
 			<img src="img/logo-rodape.png" alt="Logo Mirror Fashion" />
 
