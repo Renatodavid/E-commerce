@@ -1,0 +1,164 @@
+body {
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+header {
+	position: relative;
+}
+
+.sacola {
+	background: url(../img/sacola.png) no-repeat top right;
+	width: 140px;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 35px;
+	padding-top: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.menu-opcoes {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-opcoes ul {
+	font-size: 15px;
+}
+
+.menu-opcoes ul li {
+	display: none;
+	margin-left: 20px;
+}
+
+.menu-opcoes a {
+	color: #003366;
+}
+
+.busca, 
+.menu-departamentos {
+	background-color: #dcdcdc;
+	font-weight: bold;
+	text-transform: uppercase;  
+	width: 230px;
+}
+
+.busca h2,
+.menu-departamentos h2 {
+	background-color: white;
+	margin-bottom: 1px;
+	padding: 5px 10px;
+}
+.busca{
+    border-radius: 10px ;
+    
+}
+
+.menu-departamentos {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	clear: left;
+}
+
+.menu-departamentos a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.menu-departamentos li li a:before {
+	content: "\25B6\00a0";
+    padding-right: 3px;
+}
+.menu-departamentos li ul{
+    display: none;
+}
+.menu-departamentos li:hover ul {
+    display: block;
+}
+.menu-departamentos ul ul li{
+    background-color: #dcdcdc;
+}
+
+.destaque {
+	margin-top: 10px;
+}
+
+.destaque img {
+	margin-left: 10px;
+}
+
+.painel {
+	width: 445px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+}
+.painel h2{
+    text-shadow: 3px 3px 2px #fff;
+}
+.novidades {
+    float: left;
+    background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos {
+    float: right;
+    background-color: #f5dcdc;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+.painel li:hover{
+    box-shadow: 0 0 5px #333333;
+    transition: box-shadow 0.7s;
+
+}
+
+.painel li {
+	float: left;
+}
+.painel h2:before{
+content: '\2756';
+padding-right:100px;
+}
+
+div {
+    border-radius: 5px
+}
+
+
+.sublista.active {
+	display: block;
+}
+
+.container {
+	box-shadow: 1px 0 20px rgba(200,200,120,0.9);
+}
+
+.painel button {
+	display: none;
+}
+
+.painel-compacto li:nth-child(n+7) {
+	display: none;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px black;
+	transition: 0.3s; /* animação */
+}
+
+.painel button {
+	color: white;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.painel button:hover:after {
+	border-top-color: #393939;
+}
