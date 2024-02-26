@@ -91,7 +91,7 @@ include("./php/links.php"); ?>
 			</div>
 		</div>
 	</div>
-
+<!--https://www.youtube.com/watch?v=8y5jTqn1RQ4 assistir para entender melhor como enviar fotos etc..-->
 	</div>
 	<div class="container paineis">
 		<section class="painel novidades">
@@ -100,8 +100,9 @@ include("./php/links.php"); ?>
 				<li>
 					<a href="produto.php?imagem=img/produtos/foto1-verde.png">
 						<figure class="novidades">
-							<img src="img/produtos/miniatura1.png">
+							
 							<form method="post" action="seu_script_php.php">
+							<img src="img/produtos/miniatura1.png">
 								<button type="submit" name="valor" value="Fuzz Cardigan">Enviar</button>
 								<figcaption type="txt">Fuzz Cardigan por R$ 129,90</figcaption>
 							</form>
@@ -114,7 +115,7 @@ include("./php/links.php"); ?>
 					<a href="produto.php?imagem=img/produtos/foto2-verde.png">
 						<figure class="novidades">
 							<img src="img/produtos/miniatura2.png">
-							<figcaption type="txt">Fuzz Cardigan por R$ 129,90</figcaption>
+							<a href="checkout.php?txt=Fuzz Cardigan por R$ 129,90">Fuzz Cardigan por R$ 129,90</a>
 
 						</figure>
 					</a>

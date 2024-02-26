@@ -33,14 +33,12 @@
                 </div>
 
                 <div class="panel-body ">
-
-
                     <?php
-                    // Verifica se o parâmetro 'imagem' foi enviado na URL
+                    
                     if (isset($_GET['imagem'])) {
-                        // Recupera o caminho da imagem da URL
+                      
                         $caminho_imagem = $_GET['imagem'];
-                        // Use $caminho_imagem conforme necessário na página
+                       
                         echo '"' . $caminho_imagem . '" alt="Imagem">';
                     }
                     ?>
@@ -48,20 +46,16 @@
                     <dl action="checkout.php">
                         <dt>Produto</dt>
                         <dd><?php
-                            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                                // Verifica se o botão foi clicado
-                                if (isset($_POST["valor"])) {
-                                    // Pega o valor enviado pelo botão e armazena em uma variável
-                                    $valor = $_POST["valor"];
-
-                                    // Exibe o valor
-                                    echo "A descrição enviada é: " . $valor;
-                                } else {
-                                    // Se o botão não foi clicado, exibe uma mensagem de erro
-                                    echo "Fuzz Cardigan ";
-                                }
+                       
+                            if(isset($_GET['txt'])) {
+    
+                                 $texto = $_GET['txt'];
+   
+                          echo "<p>$texto</p>";
+                            } else {
+                                echo "<p>Nenhum texto fornecido.</p>";
                             }
-                            ?>
+                    ?>
                         </dd>
 
                         <dt>Preço</dt>
