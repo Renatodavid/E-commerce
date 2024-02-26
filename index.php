@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+	<link rel="stylesheet" href="css/darkMode.css">
 <?php $links = "links css js";
 include("./php/links.php"); ?>
 
-<body>
+<body class="light-theme">
 	<header class="container">
+		<div class="container-fluid">
 		<h1>
 			<img src="img/logo.png" alt="Mirror Fashion">
 		</h1>
-
 		<p class="sacola">
 			Nenhum item na sacola de compras
 		</p>
+		<div class="ligth-theme">
+                <button class="btn btn-dark">dark</button>
+            </div>
+		</div>
 		<?php $navbar = "navbar";
 		include("./php/navbar.php"); ?>
 	</header>
@@ -269,7 +274,7 @@ include("./php/links.php"); ?>
 	<?php $rodape = "rodape";
 	include("./php/rodape.php"); ?>
 
-
+	<script src="js/app.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/banner.js"> </script>
 
@@ -278,6 +283,7 @@ include("./php/links.php"); ?>
 	<script type="text/javascript" src="js/verificarImg.js"></script>
 	<script type="text/javascript" src="js/converteMoeda.js"></script>
 	<script type="text/javascript" src="js/testaConversao.js"></script>
+	<script type="text/javascript"  src="js/app.js"></script>
 
 </body>
 <!--Criado por Renato Marques david-->
