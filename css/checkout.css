@@ -1,3 +1,16 @@
 .form-control:invalid{
     border:1px solid #cc0000;
 }
+/* Para as camisas na seção de novidades */
+.novidades a[href*="verde"] figure,
+.novidades a[href*="azul"] figure,
+.novidades a[href*="rosa"] figure {
+    background-color: #dff0d8; /* Cor de fundo para camisas verdes, azuis e rosas */
+}
+
+/* Para as camisas na seção de mais vendidos */
+.mais-vendidos a[href*="verde"] figure,
+.mais-vendidos a[href*="azul"] figure,
+.mais-vendidos a[href*="rosa"] figure {
+    background-color: #fcf8e3; /* Cor de fundo para camisas verdes, azuis e rosas */
+}
