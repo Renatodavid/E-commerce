@@ -46,16 +46,8 @@
                     <dl action="checkout.php">
                         <dt>Produto</dt>
                         <dd><?php
-                       
-                            if(isset($_GET['txt'])) {
-    
-                                 $texto = $_GET['txt'];
-   
-                          echo "<p>$texto</p>";
-                            } else {
-                                echo "<p>Nenhum texto fornecido.</p>";
-                            }
-                    ?>
+			                  $descricao;
+			                      include("./php/descricao.php"); ?>
                         </dd>
 
                         <dt>Preço</dt>

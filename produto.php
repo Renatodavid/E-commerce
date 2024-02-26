@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/bootstrap-flatly.css">
 <link rel="stylesheet" href="css/produto.css">
 <link rel="stylesheet" href="css/mobile.css">
-<link rel="stylesheet" href="css/novoindex.css">
+
 
 
 

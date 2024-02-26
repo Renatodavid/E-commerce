@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" href="css/darkMode.css">
 <?php $links = "links css js";
 include("./php/links.php"); ?>
 
@@ -13,9 +12,9 @@ include("./php/links.php"); ?>
 		<p class="sacola">
 			Nenhum item na sacola de compras
 		</p>
-		<div class="ligth-theme">
-                <button class="btn btn-dark">dark</button>
-            </div>
+		<div>
+        	<button class="btn">dark</button>
+   		 </div>
 		</div>
 		<?php $navbar = "navbar";
 		include("./php/navbar.php"); ?>
@@ -283,7 +282,7 @@ include("./php/links.php"); ?>
 	<script type="text/javascript" src="js/verificarImg.js"></script>
 	<script type="text/javascript" src="js/converteMoeda.js"></script>
 	<script type="text/javascript" src="js/testaConversao.js"></script>
-	<script type="text/javascript"  src="js/app.js"></script>
+	<script type="text/javascript" src="js/darkMode.js"></script>
 
 </body>
 <!--Criado por Renato Marques david-->
