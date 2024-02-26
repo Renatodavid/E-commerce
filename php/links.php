@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/novoindex.css"/>
 	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/darkMode.css">
 	<link rel="stylesheet" href="css/mobile.css"media="(max-width:939px)">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	 <link rel="stylesheet" href="css/bootstrap-flatly.css"> 
